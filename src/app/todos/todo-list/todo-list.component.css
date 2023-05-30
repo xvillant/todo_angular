@@ -1,0 +1,4 @@
+tr.done {
+  text-decoration: line-through;
+  background-color: rgba(0, 128, 0, 0.2);
+}

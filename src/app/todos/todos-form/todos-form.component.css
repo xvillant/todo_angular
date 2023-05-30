@@ -1,0 +1,5 @@
+.todos-form {
+  padding-block: 20px;
+  display: flex;
+  gap: 1rem;
+}

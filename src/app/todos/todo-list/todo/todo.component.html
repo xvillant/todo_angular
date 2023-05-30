@@ -1,0 +1,9 @@
+<th scope="row">{{ index + 1 }}</th>
+<td>{{ todo.content }}</td>
+<td>{{ todo.created | date : "dd.MM.YYYY HH:mm" }}</td>
+<td style="text-align: center">
+  <button class="btn btn-danger" (click)="onDelete(todo.id)">Delete</button>
+  <button class="btn btn-success btn-spacing" (click)="onDone(todo.id)">
+    Done
+  </button>
+</td>

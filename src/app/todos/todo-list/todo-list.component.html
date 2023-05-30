@@ -1,0 +1,20 @@
+<h3 class="text-center" *ngIf="todos.length === 0">No todos to show...</h3>
+<table class="table" *ngIf="todos.length > 0">
+  <thead>
+    <tr>
+      <th style="width: 10%" scope="col">#</th>
+      <th style="width: 40%" scope="col">Content</th>
+      <th style="width: 20%" scope="col">Created</th>
+      <th style="width: 30%; text-align: center" scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      app-todo
+      [index]="i"
+      [todo]="todo"
+      *ngFor="let todo of todos; let i = index"
+      [ngClass]="todo.done ? 'done' : ''"
+    ></tr>
+  </tbody>
+</table>

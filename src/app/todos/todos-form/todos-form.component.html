@@ -1,0 +1,6 @@
+<form class="todos-form" [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+  <input class="form-control" type="text" formControlName="todo" />
+  <button class="btn btn-primary" type="submit" [disabled]="!todoForm.valid">
+    Add
+  </button>
+</form>
